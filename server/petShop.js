@@ -68,8 +68,8 @@ savePetShop();
 
 function logStats(c, d) {
     const n = c + d;
-    console.log("Added " + n + " new pets to the database");
-    console.log(c + " cat(s) and " + d + "dog(s)")
+    console.log('Added ' + n + ' new pets to the database');
+    console.log(c + ' cat(s) and ' + d + 'dog(s)')
 }
 
 // The instructs ask for all 3 functions to be called. logStats() is called inside of both 

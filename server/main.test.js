@@ -1,7 +1,7 @@
 const Cat = require ('./Constructors/Cat')
 
 
-test("This test ensures that a cat's age is a random number between 5 and 10", () => {
+test('This test ensures that a cats age is a random number between 5 and 10', () => {
     const cat = new Cat;
     const n = cat.getAge();
 
@@ -9,9 +9,9 @@ test("This test ensures that a cat's age is a random number between 5 and 10", (
     expect(n).toBeLessThan(11);
 })
 
-test("This test ensures that speak() console.logs a string if given one, otherwise it will console.log meow", () => {
+test('This test ensures that speak() console.logs a string if given one, otherwise it will console.log meow', () => {
     const cat = new Cat;
-    const words = "They're taking the Hobbits to Isengard"
+    const words = 'Theyre taking the Hobbits to Isengard'
     console.log = jest.fn();
 
     cat.speak(words);
@@ -21,7 +21,7 @@ test("This test ensures that speak() console.logs a string if given one, otherwi
     expect(console.log).toHaveBeenCalledWith('meow');
 })
 
-test("This test ensures that setName() is correctly apply the new name, and storing the old one" , () => {
+test('This test ensures that setName() is correctly apply the new name, and storing the old one' , () => {
     const cat = new Cat('Fluffy');
     cat.setName('Ted');
     const newName = cat.getName();
